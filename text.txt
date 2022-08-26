@@ -1,0 +1,1 @@
+gfortran -o main  main.f90 customTypes.f90 matrixFunctions.f90 CentralDifferencingCalc1DimConvectionDiffusion.f90 UpwindDifferencingCalc1DimConvectionDiffusion.f90 HybridDifferencingCalc1DimConvectionDiffusion.f90 HybridDifferencingCalc2DimConvectionDiffusion.f90 -llapack

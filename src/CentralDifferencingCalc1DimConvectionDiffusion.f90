@@ -72,7 +72,6 @@ function CentralDiffCalc1DimConvectionDiffusion(para) result(mk)
         nodes_t = matmul(inv(nodes_coeff_we), nodes_Su)
 
         ! print result to screen
-        print *, 'nodes_t'
         print *, nodes_t
         
         ! deallocate data
