@@ -1,0 +1,29 @@
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyphenat}
+\usepackage[english]{babel}
+\useshorthands{~}
+\defineshorthand{~-}{\hyp{}}
+
+\title{Finite Volume Method Study Notes}
+\author{Yan Liu \thanks{email:yliu.yb@qq.com}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+    \item Central differencing scheme
+    \item Upwind differencing scheme is the most stable and unconditionally bounded scheme, 
+but it introduces a high level of false diffusion due to its low order of accuracy (first-order).
+    \item Hybrid differencing scheme.
+    \item Quadratic upstream interpolation for convective kinetics (QUICK) sch-eme (Leonard, 1979).
+    \item Total variation diminishing (TVD) scheme. 
+\end{itemize}
+
+Higher-order schemes such as central differencing and QUICK can give spurious oscillations 
+or 'wiggles' when the Peclet number is high. TVD scheme designed to address this undesirable 
+oscillatory behavior of higher-order schemes. In TVD schemes the tendency towards oscillations
+is counteracted by adding an artificial diffusion fragment or by adding a weighting towards 
+upstream contribution.
+\end{document}
